@@ -11,19 +11,19 @@ tempArray01 = ['zs','ls']
 # c.execute(sql)  # 执行sql语句
 # conn.commit()  # commit，执行完毕。这操作可以操作多条sql语句后做一次即可
 ###########Python & SqlLite 删除操作：#############
-conn = sqlite3.connect("E:\Python\MyDjangoProject\db.sqlite3")
-c = conn.cursor()  # 获取游标对象
-c.execute("INSERT INTO  sqlite_sequence(name,seq) VALUES ('zs','001')")
-c.execute("INSERT INTO  sqlite_sequence(name,seq) VALUES ('ls','002')")
-c.execute("SELECT  * FROM  sqlite_sequence")
-res = c.fetchall()
-print("sqlite_sequence", res)
-for line in res:
-    for f in line:
-        print(f)
-    print()
-c.close()
-conn.close()
+# conn = sqlite3.connect("E:\Python\MyDjangoProject\db.sqlite3")
+# c = conn.cursor()  # 获取游标对象
+# c.execute("INSERT INTO  sqlite_sequence(name,seq) VALUES ('zs','001')")
+# c.execute("INSERT INTO  sqlite_sequence(name,seq) VALUES ('ls','002')")
+# c.execute("SELECT  * FROM  sqlite_sequence")
+# res = c.fetchall()
+# print("sqlite_sequence", res)
+# for line in res:
+#     for f in line:
+#         print(f)
+#     print()
+# c.close()
+# conn.close()
 # sql = "DELETE FROM TestTable01"  # 构建delete的sql语句，TestTable01为要删除的表名
 # c.execute(sql)
 # sql = "DELETE FROM TestTable02"  # 连接上数据库后，可以连续的构建sql语句并execute
