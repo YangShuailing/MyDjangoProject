@@ -29,7 +29,7 @@ tempArray01 = ['zs','ls']
 # sql = "DELETE FROM TestTable02"  # 连接上数据库后，可以连续的构建sql语句并execute
 # c.execute(sql)
 # conn.commit()
-###########Python & SqlLite 查询操作：#############
+# ##########Python & SqlLite 查询操作：#############
 # 这里我举了一个我应用中的三表联合查询的实例，“\”是python中的接行号
 # 查询是不需要commit的，最后一个for是打印查询的内容，其他应该不解释了吧
 # conn = sqlite3.connect("D:/testf.sqlite")
